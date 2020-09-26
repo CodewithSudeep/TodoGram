@@ -1,0 +1,71 @@
+.login {
+  background: #fff;
+  max-height: 387px;
+  max-width: 622px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  box-shadow: 0 0 40px 0 rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  padding: 50px 70px;
+}
+
+.login-title {
+  color: #0c5eaa;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.login-input {
+  display: flex;
+  height: 41px;
+  width: 483px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(196, 212, 255, 0.5);
+  padding: 15px 30px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #5a5a5a;
+  line-height: 16px;
+  align-items: center;
+}
+
+.login-input > input {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+.login-input > input:focus {
+  outline: none;
+}
+
+.login-input > .MuiSvgIcon-root {
+  margin-right: 5px;
+}
+
+.login-authenticateButton {
+  border-radius: 12px;
+  text-align: center;
+}
+
+.login-authenticateButton > .MuiButton-root {
+  background-color: #4aaeff !important;
+  color: #fff !important;
+  padding: 15px 20px;
+  height: 41px;
+  flex: 1!important;
+}
+
+.login-errorMessage{
+  display: flex;
+  background: lightcoral;
+  padding: 5px;
+  color: #fff;
+  margin-bottom: 10px;
+}

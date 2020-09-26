@@ -1,3 +1,7 @@
 * {
   margin: 0;
 }
+html{
+  background: rgba(255,250,130,0.4) 100%;
+  overflow: hidden;
+}
