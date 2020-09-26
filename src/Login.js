@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // material ui components
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import VpnKeyIcon from "@material-ui/icons/VpnKey";
 import Button from "@material-ui/core/Button";
-import BlockIcon from '@material-ui/icons/Block';
+import BlockIcon from "@material-ui/icons/Block";
 
 import "./Login.css";
 
@@ -22,9 +22,19 @@ export default function Login({ login }) {
     setIsUnAutherised(1);
   };
 
+  useEffect(() => {
+    if (localStorage.getItem("isLoggedIn")) {
+      login();
+    }
+  }, []);
+
   return (
     <div className="login">
-      {isUnauthorised && <div className="login-errorMessage"><BlockIcon/> Wrong username or password!</div>}
+      {isUnauthorised && (
+        <div className="login-errorMessage">
+          <BlockIcon /> Wrong username or password!
+        </div>
+      )}
 
       <form>
         {/* username */}
