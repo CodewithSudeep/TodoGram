@@ -29,9 +29,10 @@
 }
 
 .home-tabCard{
-  height: 854px;
+  max-height: 854px;
   width: 494px;
   border-radius: 12px;
   background-color: #FFF;
   box-shadow: 0 0 40px 0 rgba(255,255,255,0.3);
+  padding: 30px;
 }

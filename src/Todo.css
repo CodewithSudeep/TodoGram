@@ -1,0 +1,64 @@
+.todo {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none; 
+  max-height: 100%;
+}
+
+.todo-title {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.todo-title > .todo-titleContent {
+  display: flex;
+  align-items: center;
+}
+
+.todo-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #4d4d4d;
+}
+
+.todo-subtitle > .todo-titleForSubtitle {
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.todo-subtitle > .todo-count {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  max-width: 460px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #FFF;
+  box-shadow: 0 10px 12px 0 rgba(118,181,255,0.3);
+}
+
+.todo-form > textarea {
+  border: none;
+  outline: none;
+  resize: vertical;
+  width: 100%;
+  border-bottom: 1px solid #7a7a7a;
+  height: 70px;
+}
+
+.todo-form > .MuiButton-root {
+  height: 38px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 12px;
+  background-color: #7ab3ff;
+  margin-top: 20px;
+}
