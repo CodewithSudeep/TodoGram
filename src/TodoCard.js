@@ -10,7 +10,7 @@ import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 import DeleteIcon from '@material-ui/icons/Delete';
 
-export default function TodoCard() {
+export default function TodoCard({description, date}) {
     return (
         <div className="todoCard">
             <div className="todoCard-checkbox">
@@ -22,11 +22,11 @@ export default function TodoCard() {
             </div>
             <div className="todoCard-description">
                 <div className="todoCard-descriptionTitle">
-                    Do the Dishes by Tonight i.e. for preparation of Birthday.
+                    {description}
                 </div>
                 <div className="todoCard-descriptionExtra">
                     <div className="todoCard-timestamp">
-                        <AccessTimeIcon/> <div>2020-09-25</div>
+                        <AccessTimeIcon/> <div>&nbsp;{date}</div>
                     </div>
                     <div className="todoCard-heartOrTrash">
                         <Checkbox icon={<FavoriteBorder />} checkedIcon={<Favorite />} name="checkedH" />
