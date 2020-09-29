@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import Button from "@material-ui/core/Button";
 import NoMeetingRoomIcon from "@material-ui/icons/NoMeetingRoom";
+import Todo from "./Todo";
 
 export default function Home({ logout }) {
   const expireSession = () => logout();
@@ -13,10 +14,12 @@ export default function Home({ logout }) {
 
       <div className="home-tabs">
         {/* left card screen  */}
-        <div className="home-tabsLeft home-tabCard">LeftTab</div>
+        <div className="home-tabsLeft home-tabCard">
+          <Todo/>
+        </div>
 
         {/* right card screen */}
-        <div className="home-tabsRight home-tabCard">RIghtTab</div>
+        <div className="home-tabsRight home-tabCard">Completed Task</div>
       </div>
 
       {/* footer */}
