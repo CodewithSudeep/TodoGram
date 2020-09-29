@@ -8,20 +8,22 @@ import moment from "moment";
 export default function Todo() {
   const initialState = {
     description: "This is how your todo card is gonna be🔥",
-    date: moment().format('lll'),
+    date: moment().format("lll"),
     isHearted: 0,
-    timestamp: Date.now()
+    timestamp: Date.now(),
   };
   const [todoItems, setTodoItems] = useState([initialState]);
   const [todoDescription, setTodoDescription] = useState("");
 
   const addTodo = () => {
-    console.log(todoDescription);
+    if(!todoDescription) return 0;
     setTodoItems([
       ...todoItems,
       {
         description: todoDescription,
-        date: moment().format('lll'),
+        date: moment().format("lll"),
+        isHearted: 0,
+        timestamp: Date.now(),
       },
     ]);
 
