@@ -15,9 +15,9 @@
 
 .todoCard > .todoCard-description {
   color: #5b5b5b;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
-  line-height: 15px;
+  line-height: 19px;
   width: 100%;
   padding-right: 10px;
 }

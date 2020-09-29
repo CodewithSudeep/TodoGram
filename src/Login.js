@@ -61,7 +61,7 @@ export default function Login({ login }) {
         </div>
 
         <div className="login-authenticateButton">
-          <Button display="flex" flexGrow={1} onClick={() => authenticate()}>
+          <Button display="flex" onClick={() => authenticate()}>
             AUTHENTICATE
           </Button>
         </div>
