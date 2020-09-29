@@ -2,6 +2,7 @@ import React from 'react'
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Button from "@material-ui/core/Button";
 import "./Todo.css"
+import TodoCard from './TodoCard';
 
 export default function Todo() {
     return (
@@ -27,6 +28,14 @@ export default function Todo() {
                     ADD TO MY LIST
                 </Button>
             </form>
+
+            <TodoCard/>
+            <TodoCard/>
+            <TodoCard/>
+            <TodoCard/>
+            <TodoCard/>
+            <TodoCard/>
+            <TodoCard/>
         </div>
     )
 }

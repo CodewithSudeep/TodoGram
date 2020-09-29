@@ -2,7 +2,8 @@
   overflow-y: scroll;
   overflow-x: hidden;
   scrollbar-width: none; 
-  max-height: 100%;
+  height: 80vh;
+  width: 494px;
 }
 
 .todo-title {
@@ -19,8 +20,10 @@
 .todo-subtitle {
   display: flex;
   align-items: center;
+  margin: 0 auto;
   justify-content: space-between;
   color: #4d4d4d;
+  width: 400px;
 }
 
 .todo-subtitle > .todo-titleForSubtitle {
@@ -37,9 +40,10 @@
 .todo-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 50px auto;
-  max-width: 460px;
-  padding: 10px;
+  height: 171px;
+  width: 400px;
   border-radius: 12px;
   background-color: #FFF;
   box-shadow: 0 10px 12px 0 rgba(118,181,255,0.3);
@@ -49,16 +53,22 @@
   border: none;
   outline: none;
   resize: vertical;
-  width: 100%;
   border-bottom: 1px solid #7a7a7a;
   height: 70px;
+  width: 357px;
+  margin-top: 20px;
 }
 
 .todo-form > .MuiButton-root {
   height: 38px;
+  width: 362px;
   color: #fff;
   font-weight: 700;
   border-radius: 12px;
   background-color: #7ab3ff;
   margin-top: 20px;
+}
+
+.todo-form > .MuiButton-root:hover{
+  background-color: #7ab3ff;
 }
