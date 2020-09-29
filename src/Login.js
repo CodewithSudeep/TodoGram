@@ -26,7 +26,7 @@ export default function Login({ login }) {
     if (localStorage.getItem("isLoggedIn")) {
       login();
     }
-  }, []);
+  }, [login]);
 
   return (
     <div className="login">
