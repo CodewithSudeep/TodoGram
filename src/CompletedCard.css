@@ -1,0 +1,41 @@
+.completedCard {
+    height: 73px;
+    width: 392px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 10px 12px 0 rgba(122, 179, 255, 0.2);
+    border-left: 5px solid #7ab3ff;
+    border-right: 5px solid #7ab3ff;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .completedCard > .completedCard-description {
+    color: #5b5b5b;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 19px;
+    width: 100%;
+  }
+  
+  .completedCard-descriptionExtra > .completedCard-timestamp{
+      color: #8E8E8E;
+      font-size: 15px;
+      line-height: 14px;
+      display: flex;
+      align-items: center;
+  }
+  
+  .completedCard-descriptionExtra{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .completedCard .MuiSvgIcon-root{
+      font-size: 20px!important;
+      line-height: 14px;
+  }

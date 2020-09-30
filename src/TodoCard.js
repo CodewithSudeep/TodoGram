@@ -10,7 +10,10 @@ import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 import DeleteIcon from '@material-ui/icons/Delete';
 
-export default function TodoCard({description, date}) {
+export default function TodoCard({description, date, setTodoItems, index, todoItems}) {
+    const updateItems = () => {
+
+    }
     return (
         <div className="todoCard">
             <div className="todoCard-checkbox">
@@ -18,6 +21,7 @@ export default function TodoCard({description, date}) {
             icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
             checkedIcon={<CheckBoxIcon fontSize="small" />}
             name="checkedI"
+            onChange={() => console.log("123")}
           />
             </div>
             <div className="todoCard-description">
