@@ -15,19 +15,22 @@ export default function Home({ logout }) {
     index: 0,
     description: "This is how your todo card is gonna be🔥",
     date: moment().format("lll"),
-    isHearted: 0,
+    isHearted: !1,
     isCompleted: !1,
     timestamp: Date.now(),
-  }, {
-    index: 1,
-    description: "This is how your completed todo card is gonna be🔥",
-    date: moment().format("lll"),
-    isHearted: 0,
-    isCompleted: 1,
-    timestamp: Date.now(),
-  },];
+  }];
 
-  const [todoItems, setTodoItems] = useState(initialState)
+  const [todoItems, setTodoItems] = useState(initialState);
+  const [completedItems, setCompletedItems] = useState([
+    {
+      index: Date.now(),
+      description: "This is how your completed todo card is gonna be🔥",
+      date: moment().format("lll"),
+      isHearted: !1,
+      isCompleted: 1,
+      timestamp: Date.now(),
+    }
+  ])
 
   return (
     <div className="home">
@@ -37,12 +40,12 @@ export default function Home({ logout }) {
       <div className="home-tabs">
         {/* left card screen  */}
         <div className="home-tabsLeft home-tabCard">
-          <Todo todoItems={todoItems} setTodoItems={setTodoItems} todoDescription={todoDescription} setTodoDescription={setTodoDescription}/>
+          <Todo todoItems={todoItems} setTodoItems={setTodoItems} completedItems={completedItems} setCompletedItems={setCompletedItems} todoDescription={todoDescription} setTodoDescription={setTodoDescription}/>
         </div>
 
         {/* right card screen */}
         <div className="home-tabsRight home-tabCard">
-          <CompletedTask todoItems={todoItems}/>
+          <CompletedTask completedItems={completedItems}/>
         </div>
       </div>
 

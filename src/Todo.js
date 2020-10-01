@@ -5,13 +5,14 @@ import "./Todo.css";
 import TodoCard from "./TodoCard";
 import moment from "moment";
 
-export default function Todo({todoItems, setTodoItems, todoDescription, setTodoDescription}) {
+export default function Todo({todoItems, setTodoItems, todoDescription, setTodoDescription, completedItems, setCompletedItems}) {
 
   const addTodo = () => {
     if(!todoDescription) return 0;
     setTodoItems([
       ...todoItems,
       {
+        index: Date.now(),
         description: todoDescription,
         date: moment().format("lll"),
         isHearted: 0,
@@ -47,7 +48,7 @@ export default function Todo({todoItems, setTodoItems, todoDescription, setTodoD
       </form>
 
       {todoItems.map((data) => (
-        !data.isCompleted && <TodoCard key={data.index} description={data.description} date={data.date} setTodoItems={setTodoItems} index={data.index} todoItems={todoItems}/>
+        !data.isCompleted && <TodoCard key={data.index} description={data.description} date={data.date} setTodoItems={setTodoItems} index={data.index} todoItems={todoItems} completedItems={completedItems} setCompletedItems={setCompletedItems}/>
       ))}
     </div>
   );
