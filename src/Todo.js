@@ -1,25 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Button from "@material-ui/core/Button";
 import "./Todo.css";
 import TodoCard from "./TodoCard";
 import moment from "moment";
 
-export default function Todo() {
-  const initialState = {
-    description: "This is how your todo card is gonna be🔥",
-    date: moment().format("lll"),
-    isHearted: 0,
-    timestamp: Date.now(),
-  };
-  const [todoItems, setTodoItems] = useState([initialState]);
-  const [todoDescription, setTodoDescription] = useState("");
+export default function Todo({todoItems, setTodoItems, todoDescription, setTodoDescription, completedItems, setCompletedItems}) {
 
   const addTodo = () => {
     if(!todoDescription) return 0;
     setTodoItems([
       ...todoItems,
       {
+        index: Date.now(),
         description: todoDescription,
         date: moment().format("lll"),
         isHearted: 0,
@@ -55,7 +48,7 @@ export default function Todo() {
       </form>
 
       {todoItems.map((data) => (
-        <TodoCard description={data.description} date={data.date} />
+        !data.isCompleted && <TodoCard key={data.index} description={data.description} date={data.date} setTodoItems={setTodoItems} index={data.index} todoItems={todoItems} completedItems={completedItems} setCompletedItems={setCompletedItems}/>
       ))}
     </div>
   );
