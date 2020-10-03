@@ -45,7 +45,7 @@ export default function Home({ logout }) {
 
         {/* right card screen */}
         <div className="home-tabsRight home-tabCard">
-          <CompletedTask completedItems={completedItems}/>
+          <CompletedTask completedItems={completedItems} setCompletedItems={setCompletedItems}/>
         </div>
       </div>
 
