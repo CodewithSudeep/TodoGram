@@ -32,18 +32,21 @@ export default function TodoCard({
 
   // function to delete current item
   const deleteItem = () => {
-    let updatedItems = todoItems.filter((value) => value.index !== index);
-    setTodoItems(updatedItems);
+    let currentItem = todoItems.filter((value) => value.index === index);
+    if (!currentItem[0].isHearted) {
+      let updatedItems = todoItems.filter((value) => value.index !== index);
+      setTodoItems(updatedItems);
+    }
   };
 
   // function to make the item hearted
   const heartItem = () => {
     let currentItem = todoItems.filter((value) => value.index === index);
-    if(!currentItem[0].isHearted) currentItem[0].isHearted = 1;
-    if(currentItem[0].isHearted) currentItem[0].isHearted = !1;
+    if (!currentItem[0].isHearted) currentItem[0].isHearted = 1;
+    else currentItem[0].isHearted = !1;
 
-    console.log(currentItem)
-  }
+    console.log(currentItem);
+  };
   return (
     <div className="todoCard">
       <div className="todoCard-checkbox">

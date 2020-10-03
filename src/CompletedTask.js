@@ -3,7 +3,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import "./CompletedTask.css";
 import CompletedCard from "./CompletedCard";
 
-export default function CompletedTask({ completedItems }) {
+export default function CompletedTask({ completedItems, setCompletedItems }) {
   return (
     <div className="completedTask">
       <div className="completedTask-title">
@@ -20,7 +20,17 @@ export default function CompletedTask({ completedItems }) {
       </div>
 
       {completedItems.map(
-        (data) => (data.isCompleted && <CompletedCard key={data.index} description={data.description} date={data.date}/>)
+        (data) =>
+          data.isCompleted && (
+            <CompletedCard
+              index={data.index}
+              key={data.index}
+              description={data.description}
+              date={data.date}
+              completedItems={completedItems}
+              setCompletedItems={setCompletedItems}
+            />
+          )
       )}
     </div>
   );
