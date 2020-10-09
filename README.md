@@ -1,6 +1,11 @@
 # TodoGram
+<hr />
 
-### Announcements:
+>`TodoGram` is a app where u can keep note of your daily to-do task📅,also u can add,delete and mark 
+task as completed.It's built under **CodewithSudeep** first project using `react.js`
+
+
+### Announcements📣:
 
 #### Release 1.10.x
 
@@ -18,14 +23,16 @@ is now available.
 
 The information for **TodoGram** will be available in the documentation soon.
 
-## Features
+<hr />
 
-*   Task can be added in todo-list.
-*   Task can be marked completed.
-*   Tasks can be marked as favorite so that it couldn't be deleted.
-*   Task can be deleted.
-*   Token generation for app using static authentication.
-*   Different routes are managed using React Router DOM.
+## Features🔥
+- [x]  Task can be added in todo-list.
+- [x] Task can be marked completed.
+- [x] Tasks can be marked as favorite so that it couldn't be deleted.
+- [x] Task can be deleted.
+- [x] Token generation for app using static authentication.
+- [x] Different routes are managed using React Router DOM.
+<hr />
 
 ## Platforms
 
@@ -43,9 +50,9 @@ platform, please file an issue on the
 
 Patches for fixing them are welcome!
 
-## Contributing change
+## Contributing to change🤝
 
-Please read the [`CONTRIBUTING.md`](CONTRIBUTING.md) for details on how to
-contribute to this project.
+Wanna contribute to the project?😉 If yes then,please read the [`CONTRIBUTING.md`](CONTRIBUTING.md) for details on how to
+contribute to this project.Your contribution is always appreciated👏
 
 Happy a nice tracking of tasks!
