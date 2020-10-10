@@ -1,12 +1,6 @@
 # TodoGram
-<hr />
 
->`TodoGram` is a simple app where u can keep note of your daily to-do task📅,also u can add,delete and mark 
-task as completed.It's built under **CodewithSudeep** first project on `react.js`
-
-<hr/>
-
-## Announcements📣:
+### Announcements:
 
 #### Release 1.10.x
 
@@ -17,34 +11,29 @@ is now available.
 
 *   Code will be more friendly by using more comments.
 *   We are also planning to add backend to the same app.
-<hr/>
 
-### Welcome to `TodoGram`, CodewithSudeep's first app built on top of React.js, Google Firebase!
+## Welcome to **TodoGram**, CodewithSudeep's first app built in top of React.js, Google Firebase!
 
-## Getting started:
+### Getting started:
 
 The information for **TodoGram** will be available in the documentation soon.
 
-<hr />
+## Features
 
-## Features🔥
-- [x]  Task can be added in todo-list.
-- [x] Task can be marked completed.
-- [x] Tasks can be marked as favorite so that it couldn't be deleted.
-- [x] Task can be deleted.
-- [x] Token generation for app using static authentication.
-- [x] Different routes are managed using React Router DOM.
-<hr />
+*   Task can be added in todo-list.
+*   Task can be marked completed.
+*   Tasks can be marked as favorite so that it couldn't be deleted.
+*   Task can be deleted.
+*   Token generation for app using static authentication.
+*   Different routes are managed using React Router DOM.
 
 ## Platforms
 
->Google test can used on a variety of platforms:
+Google test can used on a variety of platforms:
 
->*   Linux
->*   Mac OS X
->*   Windows
-
-<hr/>
+*   Linux
+*   Mac OS X
+*   Windows
 
 ## Requirements
 
@@ -54,15 +43,9 @@ platform, please file an issue on the
 
 Patches for fixing them are welcome!
 
-<hr/>
+## Contributing change
 
-## Contributing to change🤝
+Please read the [`CONTRIBUTING.md`](CONTRIBUTING.md) for details on how to
+contribute to this project.
 
-Wanna contribute to the project?😉 If yes then,please do 
-read the [`CONTRIBUTING.md`](CONTRIBUTING.md) for details on how to contribute to this project.
-Your contribution is always appreciated👏
-
-Have a nice tracking of tasks😊
-<hr/>
-<hr/>
-<hr/>
+Happy a nice tracking of tasks!
