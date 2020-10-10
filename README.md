@@ -1,11 +1,12 @@
 # TodoGram
 <hr />
 
->`TodoGram` is a app where u can keep note of your daily to-do task📅,also u can add,delete and mark 
-task as completed.It's built under **CodewithSudeep** first project using `react.js`
+>`TodoGram` is a simple app where u can keep note of your daily to-do task📅,also u can add,delete and mark 
+task as completed.It's built under **CodewithSudeep** first project on `react.js`
 
+<hr/>
 
-### Announcements📣:
+## Announcements📣:
 
 #### Release 1.10.x
 
@@ -16,10 +17,11 @@ is now available.
 
 *   Code will be more friendly by using more comments.
 *   We are also planning to add backend to the same app.
+<hr/>
 
-## Welcome to **TodoGram**, CodewithSudeep's first app built in top of React.js, Google Firebase!
+### Welcome to `TodoGram`, CodewithSudeep's first app built on top of React.js, Google Firebase!
 
-### Getting started:
+## Getting started:
 
 The information for **TodoGram** will be available in the documentation soon.
 
@@ -36,11 +38,13 @@ The information for **TodoGram** will be available in the documentation soon.
 
 ## Platforms
 
-Google test can used on a variety of platforms:
+>Google test can used on a variety of platforms:
 
-*   Linux
-*   Mac OS X
-*   Windows
+>*   Linux
+>*   Mac OS X
+>*   Windows
+
+<hr/>
 
 ## Requirements
 
@@ -50,10 +54,15 @@ platform, please file an issue on the
 
 Patches for fixing them are welcome!
 
+<hr/>
+
 ## Contributing to change🤝
 
 Wanna contribute to the project?😉 If yes then,please do 
 read the [`CONTRIBUTING.md`](CONTRIBUTING.md) for details on how to contribute to this project.
 Your contribution is always appreciated👏
 
-Happy a nice tracking of tasks!
+Have a nice tracking of tasks😊
+<hr/>
+<hr/>
+<hr/>
