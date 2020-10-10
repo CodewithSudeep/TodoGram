@@ -23,7 +23,7 @@ is now available.
 
 ## Getting started:
 
-The information for **TodoGram** will be available in the documentation soon.
+Simple Todo React app where user gets to know about React Router, how authentication works and will get to know about some hooks of React.
 
 <hr />
 
