@@ -19,7 +19,7 @@ is now available.
 *   We are also planning to add backend to the same app.
 <hr/>
 
-### Welcome to `TodoGram`, CodewithSudeep's first app built on top of React.js, Google Firebase!
+## Welcome to `TodoGram`: CodewithSudeep's first app built on top of React.js, Google Firebase!
 
 ## Getting started:
 
