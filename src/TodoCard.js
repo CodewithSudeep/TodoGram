@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./TodoCard.css";
 
 import Checkbox from "@material-ui/core/Checkbox";
@@ -19,6 +19,8 @@ export default function TodoCard({
   completedItems,
   setCompletedItems,
 }) {
+
+  const[disable, setDisable] = useState(0);
   // function to change the completed Items
   const updateItems = () => {
     let updatedItems = todoItems.filter((value) => value.index !== index);
@@ -42,8 +44,14 @@ export default function TodoCard({
   // function to make the item hearted
   const heartItem = () => {
     let currentItem = todoItems.filter((value) => value.index === index);
-    if (!currentItem[0].isHearted) currentItem[0].isHearted = 1;
-    else currentItem[0].isHearted = !1;
+    if (!currentItem[0].isHearted){
+        currentItem[0].isHearted = 1;
+        setDisable(!disable);
+    }
+    else{
+      currentItem[0].isHearted = !1;
+      setDisable(!disable);
+    } 
 
     console.log(currentItem);
   };
@@ -71,6 +79,7 @@ export default function TodoCard({
               onChange={() => heartItem()}
             />
             <Checkbox
+              disabled={disable}
               icon={<DeleteOutlineIcon />}
               checkedIcon={<DeleteIcon />}
               name="checkedH"
