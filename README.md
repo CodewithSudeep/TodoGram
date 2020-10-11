@@ -58,8 +58,8 @@ Patches for fixing them are welcome!
 
 ## Contributing to change🤝
 
-Wanna contribute to the project?😉 If yes then,please do 
-read the [`CONTRIBUTING.md`](CONTRIBUTING.md) for details on how to contribute to this project.
+Wanna contribute to the project?😉 
+If yes then,please do read the [`CONTRIBUTING.md`](CONTRIBUTING.md) for details on how to contribute to this project.
 Your contribution is always appreciated👏
 
 Have a nice tracking of tasks😊
