@@ -20,13 +20,13 @@ export default function TodoCard({
   setCompletedItems,
 }) {
 
-  const[disable, setDisable] = useState(0);
+  const[disable, setDisable] = useState(false);
   // function to change the completed Items
   const updateItems = () => {
     let updatedItems = todoItems.filter((value) => value.index !== index);
     let currentItem = todoItems.filter((value) => value.index === index);
     currentItem[0].isCompleted = 1;
-
+    // console.log(currentItem);
     setCompletedItems([...completedItems, currentItem[0]]);
 
     setTodoItems(updatedItems);

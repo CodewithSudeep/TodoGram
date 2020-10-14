@@ -10,19 +10,19 @@ import DeleteOutlineIcon from "@material-ui/icons/DeleteOutline";
 import DeleteIcon from "@material-ui/icons/Delete";
 
 
-export default function CompletedCard({ description, date, completedItems, setCompletedItems, index }) {
-  const [disable, setDisable] = useState(0);
+export default function CompletedCard({ description, date, completedItems, setCompletedItems, index, isHearted }) {
+  const [isFav, setisFav] = useState(isHearted);
   const heartItem = () => {
     let currentItem = completedItems.filter((value) => value.index === index); //gets the selected item.
     if (!currentItem[0].isHearted){
       currentItem[0].isHearted = 1; //heart it
-      setDisable(!disable); //disable the delete button
     } 
     else{
       currentItem[0].isHearted = !1; 
-      setDisable(!disable); //enable delete icon
     } 
-    // console.log(currentItem);
+    // changes heart & un-heart's icons also toggle between enable & disable 
+    // state for delete icon accordingly
+    setisFav(!isFav); 
   };
 
   const deleteItem = () => {
@@ -46,9 +46,10 @@ export default function CompletedCard({ description, date, completedItems, setCo
               checkedIcon={<Favorite />}
               onChange={() => heartItem()}
               name="checkedH"
+              checked={ isFav ? true : false }
             />
             <Checkbox
-              disabled={disable}
+              disabled={ isFav ? true : false }
               icon={<DeleteOutlineIcon />}
               checkedIcon={<DeleteIcon />}
               name="checkedH"
