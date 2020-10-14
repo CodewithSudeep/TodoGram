@@ -18,7 +18,7 @@ export default function CompletedTask({ completedItems, setCompletedItems }) {
         </div>
         <div className="completedTask-count">{completedItems.length}</div>
       </div>
-
+    { console.log(completedItems)}
       {completedItems.map(
         (data) =>
           data.isCompleted && (
@@ -29,6 +29,7 @@ export default function CompletedTask({ completedItems, setCompletedItems }) {
               date={data.date}
               completedItems={completedItems}
               setCompletedItems={setCompletedItems}
+              isHearted={data.isHearted}
             />
           )
       )}
