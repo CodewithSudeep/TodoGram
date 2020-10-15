@@ -18,7 +18,6 @@ export default function CompletedTask({ completedItems, setCompletedItems }) {
         </div>
         <div className="completedTask-count">{completedItems.length}</div>
       </div>
-    { console.log(completedItems)}
       {completedItems.map(
         (data) =>
           data.isCompleted && (
