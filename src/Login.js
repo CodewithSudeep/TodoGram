@@ -9,7 +9,7 @@ import BlockIcon from "@material-ui/icons/Block";
 import "./Login.css";
 
 export default function Login({ login }) {
-  const [username, setUsername] = useState("");
+  const [username, setUsername] = useState(""); 
   const [password, setPassword] = useState("");
   const [isUnauthorised, setIsUnAutherised] = useState(!1);
 
@@ -26,7 +26,7 @@ export default function Login({ login }) {
     if (localStorage.getItem("isLoggedIn")) {
       login();
     }
-  }, []);
+  }, [login]);
 
   return (
     <div className="login">
@@ -61,7 +61,7 @@ export default function Login({ login }) {
         </div>
 
         <div className="login-authenticateButton">
-          <Button display="flex" flexGrow={1} onClick={() => authenticate()}>
+          <Button display="flex" onClick={() => authenticate()}>
             AUTHENTICATE
           </Button>
         </div>

@@ -1,0 +1,74 @@
+.todo {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none; 
+  height: 80vh;
+  width: 494px;
+}
+
+.todo-title {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.todo-title > .todo-titleContent {
+  display: flex;
+  align-items: center;
+}
+
+.todo-subtitle {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  color: #4d4d4d;
+  width: 400px;
+}
+
+.todo-subtitle > .todo-titleForSubtitle {
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.todo-subtitle > .todo-count {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  height: 171px;
+  width: 400px;
+  border-radius: 12px;
+  background-color: #FFF;
+  box-shadow: 0 10px 12px 0 rgba(118,181,255,0.3);
+}
+
+.todo-form > textarea {
+  border: none;
+  outline: none;
+  resize: vertical;
+  border-bottom: 1px solid #7a7a7a;
+  height: 70px;
+  width: 357px;
+  margin-top: 20px;
+}
+
+.todo-form > .MuiButton-root {
+  height: 38px;
+  width: 362px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 12px;
+  background-color: #7ab3ff;
+  margin-top: 20px;
+}
+
+.todo-form > .MuiButton-root:hover{
+  background-color: #7ab3ff;
+}

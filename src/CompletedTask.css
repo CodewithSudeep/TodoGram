@@ -1,0 +1,39 @@
+.completedTask {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none; 
+    height: 80vh;
+    width: 494px;
+  }
+  
+  .completedTask-title {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+  
+  .completedTask-title > .completedTask-titleContent {
+    display: flex;
+    align-items: center;
+  }
+  
+  .completedTask-subtitle {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    color: #4d4d4d;
+    width: 400px;
+    margin-bottom: 50px;
+  }
+  
+  .completedTask-subtitle > .completedTask-titleForSubtitle {
+    font-size: 26px;
+    line-height: 31px;
+  }
+  
+  .completedTask-subtitle > .completedTask-count {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+  }
