@@ -8,7 +8,7 @@ export default function CompletedTask({ completedItems, setCompletedItems }) {
     <div className="completedTask">
       <div className="completedTask-title">
         <div className="completedTask-titleContent">
-          Todo <ExpandMoreIcon />
+          Completed <ExpandMoreIcon />
         </div>
       </div>
 
