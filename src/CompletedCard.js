@@ -46,10 +46,10 @@ export default function CompletedCard({ description, date, completedItems, setCo
               checkedIcon={<Favorite />}
               onChange={() => heartItem()}
               name="checkedH"
-              checked={ isFav ? true : false }
+              checked={ isFav }
             />
             <Checkbox
-              disabled={ isFav ? true : false }
+              disabled={ isFav }
               icon={<DeleteOutlineIcon />}
               checkedIcon={<DeleteIcon />}
               name="checkedH"
