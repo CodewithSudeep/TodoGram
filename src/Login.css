@@ -1,6 +1,7 @@
 .login {
   background: #fff;
   max-height: 387px;
+  width: 40%;
   max-width: 622px;
   position: absolute;
   top: 50%;
@@ -21,9 +22,10 @@
 }
 
 .login-input {
-  display: flex;
   height: 41px;
-  width: 483px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
   border-radius: 12px;
   background-color: #fff;
   box-shadow: 0 2px 4px 0 rgba(196, 212, 255, 1);
@@ -35,17 +37,18 @@
   align-items: center;
 }
 
-.login-input > input {
+.login-input>input {
   flex: 1;
   border: none;
   outline: none;
+  width: 10%;
 }
 
-.login-input > input:focus {
+.login-input>input:focus {
   outline: none;
 }
 
-.login-input > .MuiSvgIcon-root {
+.login-input>.MuiSvgIcon-root {
   margin-right: 5px;
 }
 
@@ -54,18 +57,42 @@
   text-align: center;
 }
 
-.login-authenticateButton > .MuiButton-root {
+.login-authenticateButton>.MuiButton-root {
   background-color: #4aaeff !important;
   color: #fff !important;
   padding: 15px 20px;
   height: 41px;
-  flex: 1!important;
+  flex: 1 !important;
 }
 
-.login-errorMessage{
+.login-errorMessage {
   display: flex;
   background: lightcoral;
   padding: 5px;
   color: #fff;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .login {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .login {
+    width: 50%;
+  }
+
+  .login-input {
+    height: 30px;
+    width: 90%;
+    position: relative;
+    left: -30px;
+  }
+
+  .login-authenticateButton {
+    margin-left: -10px;
+    position: relative;
+  }
 }

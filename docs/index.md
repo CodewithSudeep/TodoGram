@@ -1,37 +1,68 @@
-## Welcome to GitHub Pages
+# TodoGram
+<hr />
 
-You can use the [editor on GitHub](https://github.com/CodewithSudeep/TodoGram/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+>`TodoGram` is a simple app where u can keep note of your daily to-do task📅,also u can add,delete and mark 
+task as completed.It's built under **CodewithSudeep** first project on `react.js`
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<hr/>
 
-### Markdown
+## Announcements📣:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### Release 1.10.x
 
-```markdown
-Syntax highlighted code block
+[Release 1.0](https://github.com/CodewithSudeep/TodoGram/releases/tag/v1.0)
+is now available.
 
-# Header 1
-## Header 2
-### Header 3
+#### Coming Soon
 
-- Bulleted
-- List
+*   Code will be more friendly by using more comments.
+*   We are also planning to add backend to the same app.
+<hr/>
 
-1. Numbered
-2. List
+## Welcome to `TodoGram`: CodewithSudeep's first app built on top of React.js, Google Firebase!
 
-**Bold** and _Italic_ and `Code` text
+## Getting started:
 
-[Link](url) and ![Image](src)
-```
+Simple Todo React app where user gets to know about React Router, how authentication works and will get to know about some hooks of React.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<hr />
 
-### Jekyll Themes
+## Features🔥
+- [x]  Task can be added in todo-list.
+- [x] Task can be marked completed.
+- [x] Tasks can be marked as favorite so that it couldn't be deleted.
+- [x] Task can be deleted.
+- [x] Token generation for app using static authentication.
+- [x] Different routes are managed using React Router DOM.
+<hr />
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CodewithSudeep/TodoGram/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Platforms
 
-### Support or Contact
+>Google test can used on a variety of platforms:
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+>*   Linux
+>*   Mac OS X
+>*   Windows
+
+<hr/>
+
+## Requirements
+
+TodoGram is designed to have fairly minimal requirements to build and use, but there are some. If you notice any problems on your
+platform, please file an issue on the
+[TodoGram GitHub Issue Tracker](https://github.com/CodewithSudeep/TodoGram/issues).
+
+Patches for fixing them are welcome!
+
+<hr/>
+
+## Contributing to change🤝
+
+Want to contribute to the project?😉 
+If yes then,please do read the [`CONTRIBUTING.md`](CONTRIBUTING.md) for details on how to contribute to this project.
+Your contribution is always appreciated👏
+
+Have a nice tracking of tasks😊
+<hr/>
+<hr/>
+<hr/>

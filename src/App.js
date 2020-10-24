@@ -66,8 +66,8 @@ function App() {
         <Route
           path="/"
           exact
-          render={(props) =>
-            isLoggedIn && authorize() ? <Redirect to="/app" /> : <Login login={login} />
+          render={() =>
+            isLoggedIn ? <Redirect to="/app" /> : <Login login={login} />
           }
         />
         <PrivateRoute component={Home} path="/app" exact />
